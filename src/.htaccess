@@ -1,0 +1,8 @@
+# 是否开启URL Rewrite.
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !.*\.(ico|gif|jpg|jpeg|png|js|css)
+RewriteRule (.*)$ /index.php [L,QSA]
+#RewriteRule (.*)$ /404.php [L]
