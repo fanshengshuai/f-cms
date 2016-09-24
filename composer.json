@@ -1,0 +1,22 @@
+{
+  "name": "fanshengshuai/f-cms",
+  "homepage": "http://github.com/fanshengshuai/f-cms/",
+  "minimum-stability": "dev",
+  "require": {
+    "fanshengshuai/flib": "*"
+  },
+  "authors": [
+    {
+      "name": "范圣帅",
+      "email": "fanshengshuai@gmail.com"
+    }
+  ],
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
+
+
