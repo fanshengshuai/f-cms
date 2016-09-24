@@ -1,0 +1,1027 @@
+/*/ var.sass*/
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #73879C;
+  background: #F4F4F4;
+  font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.471;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.Validform_right {
+  display: none;
+}
+
+.userlist-container,
+.page-edit-container,
+.question-detail-container,
+.question-list-container,
+.answer-list-container,
+.answer-detail-container {
+  height: 100%;
+}
+
+.userlist-container form .form-group .msg-wrap,
+.page-edit-container form .form-group .msg-wrap,
+.question-detail-container form .form-group .msg-wrap,
+.question-list-container form .form-group .msg-wrap,
+.answer-list-container form .form-group .msg-wrap,
+.answer-detail-container form .form-group .msg-wrap {
+  width: 600px;
+  padding-left: 9em;
+}
+
+.userlist-container .search-wrap .form-group,
+.page-edit-container .search-wrap .form-group,
+.question-detail-container .search-wrap .form-group,
+.question-list-container .search-wrap .form-group,
+.answer-list-container .search-wrap .form-group,
+.answer-detail-container .search-wrap .form-group {
+  float: left;
+}
+
+.userlist-container .search-wrap .form-group label,
+.page-edit-container .search-wrap .form-group label,
+.question-detail-container .search-wrap .form-group label,
+.question-list-container .search-wrap .form-group label,
+.answer-list-container .search-wrap .form-group label,
+.answer-detail-container .search-wrap .form-group label {
+  display: flex;
+  font-weight: normal;
+  width: 300px;
+}
+
+.userlist-container .search-wrap .form-group span,
+.page-edit-container .search-wrap .form-group span,
+.question-detail-container .search-wrap .form-group span,
+.question-list-container .search-wrap .form-group span,
+.answer-list-container .search-wrap .form-group span,
+.answer-detail-container .search-wrap .form-group span {
+  display: inline-block;
+  margin: auto 0;
+  width: 4em;
+  text-align: right;
+}
+
+.userlist-container .search-wrap .form-group .form-control,
+.page-edit-container .search-wrap .form-group .form-control,
+.question-detail-container .search-wrap .form-group .form-control,
+.question-list-container .search-wrap .form-group .form-control,
+.answer-list-container .search-wrap .form-group .form-control,
+.answer-detail-container .search-wrap .form-group .form-control {
+  margin-top: 0;
+  height: 38px;
+  flex: 1;
+  margin-left: 15px;
+}
+
+.userlist-container .search-wrap .form-group textarea.form-control,
+.page-edit-container .search-wrap .form-group textarea.form-control,
+.question-detail-container .search-wrap .form-group textarea.form-control,
+.question-list-container .search-wrap .form-group textarea.form-control,
+.answer-list-container .search-wrap .form-group textarea.form-control,
+.answer-detail-container .search-wrap .form-group textarea.form-control {
+  height: auto;
+}
+
+.userlist-container .search-wrap .search-btn, .userlist-container .search-wrap .download-btn,
+.page-edit-container .search-wrap .search-btn,
+.page-edit-container .search-wrap .download-btn,
+.question-detail-container .search-wrap .search-btn,
+.question-detail-container .search-wrap .download-btn,
+.question-list-container .search-wrap .search-btn,
+.question-list-container .search-wrap .download-btn,
+.answer-list-container .search-wrap .search-btn,
+.answer-list-container .search-wrap .download-btn,
+.answer-detail-container .search-wrap .search-btn,
+.answer-detail-container .search-wrap .download-btn {
+  float: left;
+  margin: 0 0 15px 22px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0EBF83;
+}
+
+.userlist-container .search-wrap .download-btn,
+.page-edit-container .search-wrap .download-btn,
+.question-detail-container .search-wrap .download-btn,
+.question-list-container .search-wrap .download-btn,
+.answer-list-container .search-wrap .download-btn,
+.answer-detail-container .search-wrap .download-btn {
+  background-color: #999;
+}
+
+.userlist-container label.date-wrap,
+.page-edit-container label.date-wrap,
+.question-detail-container label.date-wrap,
+.question-list-container label.date-wrap,
+.answer-list-container label.date-wrap,
+.answer-detail-container label.date-wrap {
+  float: left;
+  width: 200px;
+}
+
+.userlist-container label.date-wrap.enddate-wrap > span,
+.page-edit-container label.date-wrap.enddate-wrap > span,
+.question-detail-container label.date-wrap.enddate-wrap > span,
+.question-list-container label.date-wrap.enddate-wrap > span,
+.answer-list-container label.date-wrap.enddate-wrap > span,
+.answer-detail-container label.date-wrap.enddate-wrap > span {
+  text-align: center;
+}
+
+.userlist-container label.date-wrap.enddate-wrap .datepicker__input-container,
+.page-edit-container label.date-wrap.enddate-wrap .datepicker__input-container,
+.question-detail-container label.date-wrap.enddate-wrap .datepicker__input-container,
+.question-list-container label.date-wrap.enddate-wrap .datepicker__input-container,
+.answer-list-container label.date-wrap.enddate-wrap .datepicker__input-container,
+.answer-detail-container label.date-wrap.enddate-wrap .datepicker__input-container {
+  margin: 0;
+}
+
+.userlist-container .form-group .datepicker__input-container,
+.page-edit-container .form-group .datepicker__input-container,
+.question-detail-container .form-group .datepicker__input-container,
+.question-list-container .form-group .datepicker__input-container,
+.answer-list-container .form-group .datepicker__input-container,
+.answer-detail-container .form-group .datepicker__input-container {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.userlist-container .form-group .datepicker__input-container input.form-control,
+.page-edit-container .form-group .datepicker__input-container input.form-control,
+.question-detail-container .form-group .datepicker__input-container input.form-control,
+.question-list-container .form-group .datepicker__input-container input.form-control,
+.answer-list-container .form-group .datepicker__input-container input.form-control,
+.answer-detail-container .form-group .datepicker__input-container input.form-control {
+  flex: none;
+  margin: 0;
+  width: 100%;
+}
+
+.userlist-container .form-group .datepicker__input-container span,
+.page-edit-container .form-group .datepicker__input-container span,
+.question-detail-container .form-group .datepicker__input-container span,
+.question-list-container .form-group .datepicker__input-container span,
+.answer-list-container .form-group .datepicker__input-container span,
+.answer-detail-container .form-group .datepicker__input-container span {
+  display: none;
+}
+
+.userlist-container .back-btn,
+.page-edit-container .back-btn,
+.question-detail-container .back-btn,
+.question-list-container .back-btn,
+.answer-list-container .back-btn,
+.answer-detail-container .back-btn {
+  margin-left: 10px;
+}
+
+.userlist-container .question-detail,
+.page-edit-container .question-detail,
+.question-detail-container .question-detail,
+.question-list-container .question-detail,
+.answer-list-container .question-detail,
+.answer-detail-container .question-detail {
+  margin-top: 20px;
+  padding: 23px 27px 200px;
+  background: #fff;
+}
+
+.userlist-container .question-detail section,
+.page-edit-container .question-detail section,
+.question-detail-container .question-detail section,
+.question-list-container .question-detail section,
+.answer-list-container .question-detail section,
+.answer-detail-container .question-detail section {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.userlist-container .question-detail section label,
+.page-edit-container .question-detail section label,
+.question-detail-container .question-detail section label,
+.question-list-container .question-detail section label,
+.answer-list-container .question-detail section label,
+.answer-detail-container .question-detail section label {
+  width: 4em;
+  text-align: right;
+  font-size: 14px;
+  color: #999;
+}
+
+.userlist-container .question-detail section p,
+.page-edit-container .question-detail section p,
+.question-detail-container .question-detail section p,
+.question-list-container .question-detail section p,
+.answer-list-container .question-detail section p,
+.answer-detail-container .question-detail section p {
+  flex: 1;
+  margin: 0 0 0 3em;
+  font-size: 14px;
+  color: #3f3f3f;
+}
+
+.userlist-container .question-detail section p .status,
+.page-edit-container .question-detail section p .status,
+.question-detail-container .question-detail section p .status,
+.question-list-container .question-detail section p .status,
+.answer-list-container .question-detail section p .status,
+.answer-detail-container .question-detail section p .status {
+  display: inline-block;
+  padding: 9px 15px;
+  color: #999;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.userlist-container .question-detail .upload-wrap,
+.page-edit-container .question-detail .upload-wrap,
+.question-detail-container .question-detail .upload-wrap,
+.question-list-container .question-detail .upload-wrap,
+.answer-list-container .question-detail .upload-wrap,
+.answer-detail-container .question-detail .upload-wrap {
+  display: flex;
+  width: 600px;
+}
+
+.userlist-container .question-detail .upload-wrap label,
+.page-edit-container .question-detail .upload-wrap label,
+.question-detail-container .question-detail .upload-wrap label,
+.question-list-container .question-detail .upload-wrap label,
+.answer-list-container .question-detail .upload-wrap label,
+.answer-detail-container .question-detail .upload-wrap label {
+  display: inline-block;
+  margin: auto 0;
+  width: 4em;
+  text-align: right;
+  font-weight: normal;
+}
+
+.userlist-container .question-detail .upload-wrap .upload-mock,
+.page-edit-container .question-detail .upload-wrap .upload-mock,
+.question-detail-container .question-detail .upload-wrap .upload-mock,
+.question-list-container .question-detail .upload-wrap .upload-mock,
+.answer-list-container .question-detail .upload-wrap .upload-mock,
+.answer-detail-container .question-detail .upload-wrap .upload-mock {
+  flex: 1;
+  margin: 0 0 0 3em;
+  font-size: 14px;
+  color: #3f3f3f;
+}
+
+.userlist-container .question-detail .upload-wrap .upload-mock label,
+.page-edit-container .question-detail .upload-wrap .upload-mock label,
+.question-detail-container .question-detail .upload-wrap .upload-mock label,
+.question-list-container .question-detail .upload-wrap .upload-mock label,
+.answer-list-container .question-detail .upload-wrap .upload-mock label,
+.answer-detail-container .question-detail .upload-wrap .upload-mock label {
+  width: auto;
+}
+
+.userlist-container .question-detail .upload-wrap .upload-btn,
+.page-edit-container .question-detail .upload-wrap .upload-btn,
+.question-detail-container .question-detail .upload-wrap .upload-btn,
+.question-list-container .question-detail .upload-wrap .upload-btn,
+.answer-list-container .question-detail .upload-wrap .upload-btn,
+.answer-detail-container .question-detail .upload-wrap .upload-btn {
+  margin-left: 15px;
+}
+
+.sidebar {
+  position: relative;
+  float: left;
+  width: 165px;
+  height: 100%;
+  min-height: 600px;
+  overflow-y: scroll;
+  background-color: #263C50;
+}
+
+.sidebar .nav-title {
+  height: 80px;
+  background-color: #F85F48;
+  overflow: hidden;
+}
+
+.sidebar .nav-title a {
+  display: block;
+  width: 75px;
+  margin: 20px auto;
+}
+
+.sidebar .nav-title a img {
+  width: 100%;
+  height: auto;
+}
+
+.sidebar .nav-list {
+  margin-top: 24px;
+  padding: 0;
+}
+
+.sidebar .nav-list li {
+  position: relative;
+  float: left;
+  width: 100%;
+  list-style: none;
+  color: #fff;
+}
+
+.sidebar .nav-list li a {
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.sidebar .nav-list li:hover, .sidebar .nav-list li.active {
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+.sidebar .nav-list li:hover:before, .sidebar .nav-list li.active:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background-color: #F85F48;
+}
+
+.sidebar .sidebar-desp {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 22px 22px;
+  font-size: 12px;
+}
+
+.sidebar .sidebar-desp p {
+  margin-bottom: 5px;
+}
+
+.content-wrap {
+  margin-left: 165px;
+  height: 100%;
+  overflow: scroll;
+}
+
+.content-wrap .right-header {
+  height: 80px;
+  line-height: 80px;
+  background-color: #fff;
+}
+
+.content-wrap .right-header .user-info {
+  float: right;
+  margin-right: 56px;
+  font-size: 12px;
+  color: #3F3F3F;
+}
+
+.content-wrap .right-header .user-info img {
+  width: 42px;
+  height: 42px;
+  margin-right: 12px;
+  border-radius: 50%;
+}
+
+.content-wrap .right-header .logout {
+  float: right;
+  margin-right: 30px;
+  color: #F85F48;
+  font-size: 12px;
+}
+
+.content-wrap .content {
+  padding: 30px 50px 0;
+}
+
+label {
+  color: #999;
+  font-size: 14px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 44px;
+  margin-top: 6px;
+  padding: 10px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #3F3F3F;
+  border: none;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  outline: none;
+  box-shadow: none;
+}
+
+textarea {
+  outline: none;
+  box-shadow: none;
+}
+
+.submit-btn {
+  padding: 12px 0;
+  border-radius: 4px;
+  background-color: #F85F48;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.submit-btn:hover, .submit-btn:active, .submit-btn:focus {
+  color: #fff;
+}
+
+.upload-wrap audio {
+  vertical-align: middle;
+}
+
+.upload-mock {
+  margin-left: 15px;
+}
+
+.upload-mock img {
+  margin-right: 15px;
+  width: 300px;
+  height: auto;
+  min-height: 160px;
+  background-color: #C0C0C0;
+}
+
+.upload-mock .upload-btn {
+  display: inline-block;
+  padding: 0 20px;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  color: #7d7d7d;
+  font-size: 14px;
+  line-height: 38px;
+}
+
+.custom-table {
+  border-radius: 4px;
+  margin: 0;
+}
+
+.custom-table thead {
+  background-color: #E5E5E5;
+}
+
+.custom-table thead tr th {
+  color: #3F3F3F;
+  padding: 12px;
+  border: none;
+}
+
+.custom-table tbody {
+  background-color: #fff;
+}
+
+.custom-table tbody tr td {
+  padding: 20px 12px;
+  font-size: 12px;
+  color: #333;
+}
+
+.custom-table tbody tr td a {
+  font-size: 12px;
+  color: #19B577;
+  cursor: pointer;
+}
+
+nav {
+  background-color: #fff;
+  padding: 50px 50px 0;
+}
+
+.pagination {
+  float: right;
+}
+
+.pagination li a {
+  background-color: #fff;
+  color: #19B577;
+  border-color: #ddd;
+  cursor: pointer;
+}
+
+.pagination li a:hover, .pagination li a:active, .pagination li a:focus {
+  background-color: #fff;
+  color: #19B577;
+  border-color: #ddd;
+}
+
+.pagination li.disable a {
+  background-color: #fff;
+  color: #999;
+  border-color: #ddd;
+}
+
+.pagination li.active a {
+  background-color: #19B577;
+  color: #fff;
+  border-color: #ddd;
+}
+
+.pagination li.active a:hover, .pagination li.active a:active, .pagination li.active a:focus {
+  background-color: #19B577;
+  color: #fff;
+  border-color: #ddd;
+}
+
+.userlist-container {
+  margin-top: 120px;
+}
+
+.userlist-container .logo {
+  display: block;
+  margin: 0 auto;
+  width: 68px;
+  height: 68px;
+}
+
+.userlist-container h2 {
+  display: block;
+  margin: 11px auto 0;
+  text-align: center;
+  color: #6B6B6B;
+  font-size: 20px;
+}
+
+.userlist-container .signin-wrap {
+  margin: 34.5px auto 0;
+  padding: 18.5px 32.5px 32.5px;
+  width: 368.3px;
+  background-color: #fff;
+  border-radius: 7px;
+}
+
+.userlist-container label {
+  width: 100%;
+}
+
+.userlist-container .submit-btn {
+  display: block;
+  width: 100%;
+}
+
+.userlist-container .signin-error {
+  display: block;
+  width: 7em;
+  margin: 10px auto 0;
+  color: #F85F48;
+  text-align: center;
+}
+
+.page-edit-container .form-group:not(.upload-wrap) label {
+  display: flex;
+  font-weight: normal;
+  width: 600px;
+}
+
+.page-edit-container .form-group:not(.upload-wrap) span {
+  display: inline-block;
+  margin: auto 0;
+  width: 7em;
+  text-align: right;
+}
+
+.page-edit-container .form-group:not(.upload-wrap) input.form-control {
+  margin-top: 0;
+  height: 38px;
+}
+
+.page-edit-container .form-group:not(.upload-wrap) .form-control {
+  margin-left: 15px;
+  flex: 1;
+}
+
+.page-edit-container .form-group:not(.upload-wrap) input[type=checkbox] {
+  flex: none !important;
+  margin-top: 0;
+  margin-left: 15px;
+  width: 30px;
+}
+
+.page-edit-container .btn-wrap {
+  margin-top: 20px;
+  margin-left: 7em;
+}
+
+.page-edit-container .btn-wrap .is-selected-status {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 9px 15px;
+  border: 1px solid #979797;
+  border-radius: 4px;
+}
+
+.page-edit-container .btn-wrap .status-desp {
+  font-size: 14px;
+  color: #1CCDA6;
+  line-height: 20px;
+}
+
+.page-edit-container .btn-wrap .choose-btn {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 9px 15px;
+  border-radius: 4px;
+  color: #fff;
+  background: #0EBF83;
+}
+
+.page-edit-container .upload-wrap {
+  display: flex;
+  width: 700px;
+}
+
+.page-edit-container .upload-wrap label {
+  display: inline-block;
+  margin: auto 0;
+  width: 7em;
+  text-align: right;
+  font-weight: normal;
+}
+
+.page-edit-container .upload-wrap .upload-btn-wrap {
+  width: 9em;
+}
+
+.page-edit-container .upload-mock {
+  display: flex;
+  flex: 1;
+  margin-left: 15px;
+}
+
+.page-edit-container .upload-mock .banner-image {
+  display: inline-block;
+  margin-right: 15px;
+  width: 356px;
+  height: 200px;
+  overflow: hidden;
+  background-color: #C0C0C0;
+}
+
+.page-edit-container .upload-mock .banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+.page-edit-container .upload-mock .upload-btn {
+  display: inline-block;
+  padding: 0 20px;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  color: #7d7d7d;
+  font-size: 14px;
+  line-height: 38px;
+}
+
+.page-edit-container .checkbox-desc-wrap {
+  flex: 1;
+  margin: auto;
+}
+
+.page-edit-container .submit-btn {
+  float: left;
+  margin: 20px 0 15px 7em;
+  padding: 8px 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0EBF83;
+}
+
+.question-list-container span.selected-text {
+  color: #999;
+}
+
+.question-detail-container .btn-wrap {
+  margin-top: 20px;
+  margin-left: 7em;
+}
+
+.question-detail-container .btn-wrap .is-selected-status {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 9px 15px;
+  border: 1px solid #979797;
+  border-radius: 4px;
+}
+
+.question-detail-container .btn-wrap .status-desp {
+  font-size: 14px;
+  color: #1CCDA6;
+  line-height: 20px;
+}
+
+.question-detail-container .btn-wrap .choose-btn {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 9px 15px;
+  border-radius: 4px;
+  color: #fff;
+  background: #0EBF83;
+}
+
+.answer-detail-container .form-group:not(.upload-wrap) label {
+  display: flex;
+  font-weight: normal;
+  width: 600px;
+}
+
+.answer-detail-container .form-group:not(.upload-wrap) span {
+  display: inline-block;
+  margin: auto 0;
+  width: 4em;
+  text-align: right;
+}
+
+.answer-detail-container .form-group:not(.upload-wrap) input.form-control {
+  margin-top: 0;
+  height: 38px;
+}
+
+.answer-detail-container .form-group:not(.upload-wrap) .form-control {
+  margin-left: 15px;
+  flex: 1;
+}
+
+.answer-detail-container .form-group:not(.upload-wrap) input[type=checkbox] {
+  flex: none !important;
+  margin-top: 0;
+  margin-left: 3em;
+  width: 30px;
+}
+
+.answer-detail-container .form-group:not(.upload-wrap) .checkbox-desc-wrap {
+  flex: 1;
+  margin: auto;
+}
+
+.answer-detail-container .btn-wrap {
+  margin-top: 20px;
+  margin-left: 7em;
+}
+
+.answer-detail-container .btn-wrap .save-btn {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 9px 15px;
+  border-radius: 4px;
+  color: #fff;
+  background: #0EBF83;
+}
+
+.tether-element-attached-top .datepicker__triangle, .tether-element-attached-bottom .datepicker__triangle {
+  margin-left: -8px;
+  position: absolute;
+}
+
+.tether-element-attached-top .datepicker__triangle, .tether-element-attached-bottom .datepicker__triangle, .tether-element-attached-top .datepicker__triangle:before, .tether-element-attached-bottom .datepicker__triangle:before {
+  box-sizing: content-box;
+  position: absolute;
+  border: 8px solid transparent;
+  height: 0;
+  width: 1px;
+}
+
+.tether-element-attached-top .datepicker__triangle:before, .tether-element-attached-bottom .datepicker__triangle:before {
+  content: "";
+  z-index: -1;
+  border-width: 8px;
+  left: -8px;
+  border-bottom-color: #aeaeae;
+}
+
+.tether-element-attached-top .datepicker__triangle {
+  top: 0;
+  margin-top: -8px;
+}
+
+.tether-element-attached-top .datepicker__triangle, .tether-element-attached-top .datepicker__triangle:before {
+  border-top: none;
+  border-bottom-color: #f0f0f0;
+}
+
+.tether-element-attached-top .datepicker__triangle:before {
+  top: -1px;
+  border-bottom-color: #aeaeae;
+}
+
+.tether-element-attached-bottom .datepicker__triangle {
+  bottom: 0;
+  margin-bottom: -8px;
+}
+
+.tether-element-attached-bottom .datepicker__triangle, .tether-element-attached-bottom .datepicker__triangle:before {
+  border-bottom: none;
+  border-top-color: #fff;
+}
+
+.tether-element-attached-bottom .datepicker__triangle:before {
+  bottom: -1px;
+  border-top-color: #aeaeae;
+}
+
+.datepicker {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #aeaeae;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+}
+
+.datepicker__container {
+  position: absolute;
+  display: inline-block;
+  z-index: 2147483647;
+}
+
+.datepicker__triangle {
+  position: absolute;
+  left: 50px;
+}
+
+.datepicker__header {
+  text-align: center;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #aeaeae;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding-top: 8px;
+  position: relative;
+}
+
+.datepicker__current-month {
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.datepicker__navigation {
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  width: 0;
+  border: 6px solid transparent;
+}
+
+.datepicker__navigation--previous {
+  left: 10px;
+  border-right-color: #ccc;
+}
+
+.datepicker__navigation--previous:hover {
+  border-right-color: #b3b3b3;
+}
+
+.datepicker__navigation--next {
+  right: 10px;
+  border-left-color: #ccc;
+}
+
+.datepicker__navigation--next:hover {
+  border-left-color: #b3b3b3;
+}
+
+.datepicker__week-day {
+  color: #ccc;
+  display: inline-block;
+  width: 28px;
+  line-height: 24px;
+}
+
+.datepicker__month {
+  margin: 5px;
+  text-align: center;
+}
+
+.datepicker__day {
+  color: #000;
+  display: inline-block;
+  width: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.datepicker__day:hover {
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+
+.datepicker__day--today {
+  font-weight: bold;
+}
+
+.datepicker__day--selected {
+  border-radius: 4px;
+  background-color: #216ba5;
+  color: #fff;
+}
+
+.datepicker__day--selected:hover {
+  background-color: #1d5d90;
+}
+
+.datepicker__day--disabled {
+  cursor: default;
+  color: #ccc;
+}
+
+.datepicker__day--disabled:hover {
+  background-color: transparent;
+}
+
+.datepicker__input-container {
+  position: relative;
+}
+
+.datepicker__input {
+  position: relative;
+  font-size: 13px;
+  border-radius: 4px;
+  box-shadow: inset 0 2px 2px #e9e9e9;
+  border: 1px solid #aeaeae;
+  line-height: 16px;
+  padding: 6px 10px 5px;
+}
+
+.datepicker__input:focus {
+  outline: none;
+  border-color: #aeaeae;
+  box-shadow: inset 0 2px 2px #e9e9e9, 0 0 10px 0 rgba(73, 107, 125, 0.3);
+}
+
+.datepicker__input:not(:valid) ~ .close-icon {
+  display: none;
+}
+
+.close-icon {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.close-icon:after {
+  background-color: #216ba5;
+  border-radius: 50%;
+  bottom: 0;
+  box-sizing: border-box;
+  color: white;
+  content: "\00d7";
+  cursor: pointer;
+  font-size: 12px;
+  height: 16px;
+  width: 16px;
+  line-height: 1;
+  margin: -8px auto 0;
+  padding: 2px;
+  position: absolute;
+  right: 7px;
+  text-align: center;
+  top: 50%;
+}
+
+/*# sourceMappingURL=maps/main.css.map */

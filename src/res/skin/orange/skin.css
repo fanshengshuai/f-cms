@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* 橙色 */
+a{color:#333}a:hover,a:focus,.maincolor,.maincolor a{color:#06c}
+.f-ui-header{ color:#fff}/*头部颜色*/
+	.f-ui-logo,.f-ui-logo-m,.f-ui-subtitle,.f-ui-userbox{color:#fff}/*logo 及 用户信息文字颜色*/
+	.f-ui-logo:hover,.f-ui-logo-m:hover{color:#fff;text-decoration: none}
+	
+.f-ui-header{background-color:#ff4a00}/*顶部导航*/
+#f-ui-nav > ul > li > a{ color:#fff}/*顶部导航文字颜色*/
+#f-ui-nav > ul > li > a:hover,#f-ui-nav > ul > li.current > a{ color:#fff}/*导航高亮状态*/
+.f-ui-userbar > li > a{ color:#fff}
+.f-ui-userbar > li > a:hover,.f-ui-userbar > li.current > a{ color:#fff}/*用户信息条高亮*/
+.f-ui-aside{}/*侧边栏*/
+	.f-ui-aside .menu_dropdown dt{color:#333}/*左侧二级导航菜单*/
+	.f-ui-aside .menu_dropdown dt:hover{color:#148cf1}
+	.f-ui-aside .menu_dropdown dt:hover [class^="icon-"]{ color:#7e8795}
+	.f-ui-aside .menu_dropdown li a{color:#666;border-bottom: 1px solid #e5e5e5}
+	.f-ui-aside .menu_dropdown li a:hover{color:#148cf1;background-color:#fafafa}
+	.f-ui-aside .menu_dropdown li.current a,.menu_dropdown li.current a:hover{color:#148cf1}
+	.f-ui-aside .menu_dropdown dt .f-ui-iconfont{ color:#a0a7b1}
+	.f-ui-aside .menu_dropdown dt .menu_dropdown-arrow{ color:#b6b7b8}
+	.dislpayArrow a{background:url(icon_arrow.png) no-repeat 0 0}

@@ -1,0 +1,88 @@
+{include "admin/public/header.tpl.php"}
+
+
+<link href="/res/lib/f-ui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" src="/res/lib/icheck/jquery.icheck.min.js"></script>
+
+
+<title>栏目设置</title>
+
+<div class="pd-20">
+    <form action="" method="post" class="form form-horizontal" id="form-category-add">
+        <div id="tab-category" class="HuiTab">
+            <div class="tabBar cl">
+                <span>基本设置</span>
+            </div>
+            <div class="tabCon"style="display: block;">
+                <div class="row cl">
+                    <label class="form-label col-3"><span class="c-red">*</span>字段名称：</label>
+                    <div class="formControls col-6">
+                        <input type="text" class="input-text" value="{$catData.name}" placeholder="" id="field_name" name="field_name" datatype="*2-16">
+                    </div>
+                    <div class="col-3" id="field_name_msg" style="color: red"></div>
+                </div>
+                <div class="row cl">
+                    <label class="form-label col-3"><span class="c-red">*</span>数据类型：</label>
+
+                    <div class="formControls col-6">
+                        <input type="text" class="input-text" value="{$catData.name}" placeholder="" id="field_type" name="field_type" datatype="*2-16">
+                    </div>
+                    <div class="col-3" id="field_type_msg" style="color: red"></div>
+                </div>
+                <div class="row cl">
+                    <label class="form-label col-3"><span class="c-red">*</span>备注：</label>
+
+                    <div class="formControls col-6">
+                        <input type="text" class="input-text" value="{$catData.name}" placeholder="" id="field_summary" name="field_summary" datatype="*2-16">
+                    </div>
+                    <div class="col-3" id="field_summary_mag" style="color: red"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <input type="hidden" name="id" value="{$catData.id}"/>
+                <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script type="text/javascript">
+    $('#form-category-add').submit(function(){
+        var model_name = $('#field_name').val();
+        var table_name = $('#field_type').val();
+        document.getElementById('field_name_msg').innerHTML = '';
+        document.getElementById('field_type_msg').innerHTML = '';
+        if(!model_name){
+            document.getElementById('field_name_msg').innerHTML = '请填写字段名称!';
+            return false;
+        }
+        if(!table_name){
+            document.getElementById('field_type_msg').innerHTML = '请填写数据类型!';
+            return false;
+        }
+        return true;
+    });
+    $(function () {
+//        $('.skin-minimal input').iCheck({
+//            checkboxClass: 'icheckbox-blue',
+//            radioClass: 'iradio-blue',
+//            increaseArea: '20%'
+//        });
+
+        $("#form-article-category-add").Validform({
+            tiptype: 2,
+            callback: function (form) {
+                form[0].submit();
+                var index = parent.layer.getFrameIndex(window.name);
+                parent.$('.btn-refresh').click();
+                parent.layer.close(index);
+            }
+        });
+        $.Huitab("#tab-category .tabBar span", "#tab-category .tabCon", "current", "click", "0");
+    });
+</script>
+{include "admin/public/footer.tpl.php"}
