@@ -1,0 +1,11 @@
+.idea
+.DS_Store
+/src/data
+*.swp
+*.lock
+*.log
+*.build*
+*.project*
+*.setting*
+/vendor/
+/bin/
