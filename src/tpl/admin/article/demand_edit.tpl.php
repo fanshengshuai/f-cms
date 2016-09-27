@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <script type="text/javascript" src="/res/js/jquery.js"></script>
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="/res/adminjs/jquery.js"></script>
+    <script type="text/javascript" src="/res/admin/js/jquery.js"></script>
     <script type="text/javascript" src="/res/lib/html5.js"></script>
     <script type="text/javascript" src="/res/lib/respond.min.js"></script>
     <script type="text/javascript" src="/res/lib/PIE_IE678.js"></script>

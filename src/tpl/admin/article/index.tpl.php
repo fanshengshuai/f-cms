@@ -7,8 +7,8 @@
     <meta name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <script type="text/javascript" src="/adminjs/jquery.min.js"></script>
-    <script type="text/javascript" src="/adminjs/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/admin/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/admin/js/jquery-1.8.2.min.js"></script>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="/res/lib/html5.js"></script>
     <script type="text/javascript" src="/res/lib/respond.min.js"></script>

@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <script type="text/javascript" src="/res/adminjs/jquery.js"></script>
+    <script type="text/javascript" src="/res/admin/js/jquery.js"></script>
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="/res/adminjs/jquery.js"></script>
+    <script type="text/javascript" src="/res/admin/js/jquery.js"></script>
     <script type="text/javascript" src="/res/lib/html5.js"></script>
     <script type="text/javascript" src="/res/lib/respond.min.js"></script>
     <script type="text/javascript" src="/res/lib/PIE_IE678.js"></script>
