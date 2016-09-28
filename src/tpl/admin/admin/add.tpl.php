@@ -77,21 +77,11 @@
         </div>
     </form>
 </div>
-<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
-<script type="text/javascript" src="/res/lib/icheck/jquery.icheck.min.js"></script>
-
-<script type="text/javascript" src="/res/lib/layer/1.9.3/layer.js"></script>
 
 
 
 <script type="text/javascript">
     $(function(){
-        $('.skin-minimal input').iCheck({
-            checkboxClass: 'icheckbox-blue',
-            radioClass: 'iradio-blue',
-            increaseArea: '20%'
-        });
-
         $("#form-admin-add").Validform({
             tiptype:2,
             ajaxPost:true,

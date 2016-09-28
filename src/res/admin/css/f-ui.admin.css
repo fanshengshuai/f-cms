@@ -22,7 +22,7 @@ h4{line-height:30px}
 
 /*组件*/
 	/*logo*/
-	.f-ui-logo,.f-ui-logo-m{height:44px; margin-left:20px;cursor:pointer;font-size:16px; font-weight:bold; line-height:44px}
+	.f-ui-logo,.f-ui-logo-m{height:44px; width:200px; text-align: center; cursor:pointer;font-size:16px; font-weight:bold; line-height:44px}
 
 	/*导航*/
 	#f-ui-nav{ margin-left:200px; margin-right:260px; background-color:transparent}
@@ -30,7 +30,7 @@ h4{line-height:30px}
 	#f-ui-nav > ul > li > a{padding:0 20px}
 	#f-ui-nav > ul > li,#f-ui-nav > ul > li > a{height:44px; line-height:44px}
 	#f-ui-nav > ul > li > a:hover,#f-ui-nav > ul > li.current > a{ background-color:rgba(255,255,255,0.2)}
-	.f-ui-userbar{ position:absolute; top:0px; right:20px}
+	.f-ui-userbar{ position:absolute; top:0; right:20px}
 	.f-ui-userbar > li{ float:left; display:inline-block; position:relative;line-height:44px}
 	.f-ui-userbar > li > a{ display:inline-block; padding:0 10px;height:44px; line-height:44px}
 	.f-ui-userbar > li > a:hover,f-ui-userbar > li.current > a{ text-decoration:none;background-color:rgba(255,255,255,0.2)}
@@ -42,8 +42,8 @@ h4{line-height:30px}
 	.f-ui-aside .menu_dropdown dt .menu_dropdown-arrow{ position:absolute;overflow: hidden; top:0; right:15px;transition-duration:0.3s ;transition-property:all}
 	.f-ui-aside .menu_dropdown dd{ display:none}
 	.f-ui-aside .menu_dropdown dt.selected .menu_dropdown-arrow{transform: rotate(180deg)}
-	.f-ui-aside .menu_dropdown dd.selected{display:block; margin-left:0px}
-	.f-ui-aside .menu_dropdown ul{padding:0px}
+	.f-ui-aside .menu_dropdown dd.selected{display:block; margin-left:0; }
+	.f-ui-aside .menu_dropdown ul{padding:0; }
 	.f-ui-aside .menu_dropdown li{line-height:35px;overflow:hidden;zoom:1}
 	.f-ui-aside .menu_dropdown li a{padding-left:15px; display:block;font-weight: bold; margin:0}
 	.f-ui-aside .menu_dropdown li a i{ font-weight: normal}

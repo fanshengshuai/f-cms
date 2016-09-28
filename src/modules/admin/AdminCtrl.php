@@ -88,7 +88,7 @@ class AdminAdminCtrl extends AdminAbstractCtrl {
 
     public function insertAction() {
         $m = new FTable("admin");
-        $_POST['rtime'] = time();
+        $_POST['create_time'] = time();
         $_POST['username'] = trim($_POST['username']);
         $_POST['password'] = md5(trim($_POST['password']));
         if ($m->insert($_POST)) {
