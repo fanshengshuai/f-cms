@@ -15,10 +15,25 @@ class AdminCacheCtrl extends AdminAbstractCtrl {
 
         global $_F;
 
-//        $_F['debug'] = 1;
+//        $_F['debug']=1;
+
         FCache::flush();
 
         FSetting::updateSystemCache();
+
+
+        $cache_dir = WEB_ROOT_DIR . "data/template_c";
+//        FFile::rmDir(WEB_ROOT_DIR . "data");
+
+        if (is_dir($cache_dir)) {
+            $cache_dir_new = $cache_dir . '.bak_' . $_F['http_host'] . '_' . date('Y-m-d_H_i_s') . rand(1000, 9999);
+            rename($cache_dir, $cache_dir_new);
+//            chmod($cache_dir_new, 0777, 1);
+            set_time_limit(0);
+            FFile::rmDir($cache_dir_new . '/');
+        }
+
+//        FFile::rmDir();
 
         $this->success('缓存已经清空。');
 
