@@ -244,4 +244,10 @@ abstract class FController {
 
         $_F['debug'] = 1;
     }
+
+    protected function closeDebug() {
+        global $_F;
+
+        $_F['debug'] = 0;
+    }
 }

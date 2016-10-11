@@ -891,7 +891,7 @@ class FTable {
     }
 
     public function leftJoin($table, $as, $on = null) {
-        $this->_table = "{$this->_table} left join `{$table}` as {$as}";
+        $this->_table = "{$this->_table} left join `{$this->config['table_pre']}{$table}` as {$as}";
 
         if ($on) $this->on($on);
 
